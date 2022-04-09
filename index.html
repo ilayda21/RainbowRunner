@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Rainbow Runner</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://use.fontawesome.com/1b9e1968bb.js"></script>
+</head>
+<body>
+    <canvas id="confetti"></canvas>
+    <h1>
+        <span class="rainbow">Rainbow Runner</span>
+        <button id="btn-leaderboard" class="btn-leaderboard"><i class="fa fa-trophy"></i></button> 
+    </h1>
+    <div id="game" class="game">
+        <div id="hero" class="hero" data-char="hero"><div class="hero-bg"></div></div>
+        <button id="play" class="play"><i class="fa fa-play"></i></button>
+        <div id="score" class="score">Score: 0</div>
+    </div>
+    <div id="score-board" class="score-board hide">
+        <h2>Leaderboard</h2>
+        <table style="width:100%" id="score-table">
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Score</th>
+            </tr>
+        </table>
+    </div>
+    <div id="bestscore" class="waviy hide">
+        <span style="--i:1">B</span>
+        <span style="--i:2">E</span>
+        <span style="--i:3">S</span>
+        <span style="--i:4">T</span>
+        <span></span>
+        <span></span>
+        <span style="--i:5">S</span>
+        <span style="--i:6">C</span>
+        <span style="--i:7">O</span>
+        <span style="--i:8">R</span>
+        <span style="--i:9">E</span>
+    </div>
+
+    <div class="username" id="username">
+        <label for="username"> Enter an username:</label>
+        <input type="text" id="username-input" name="username" minlength="3" maxlength="20" autocomplete="off"/>
+        <button id="username-submit">OK</button>
+    </div>
+</body>
+<script src='main.js'></script>
+</html>
